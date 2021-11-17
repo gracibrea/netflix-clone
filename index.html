@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl.theme.default.min.css">
+    <title>GraciFlix</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/logo-graciflix-150.png" alt="">
+            <!--menu de navegação-->
+            <nav>
+                <a href="#">Início</a>
+                <a href="https://www.themoviedb.org/tv/airing-today?language=pt-BR" target="blank">Séries</a>
+                <a href="https://www.themoviedb.org/movie/now-playing?language=pt-BR" target="blank">Filmes</a>
+                <a href="https://www.youtube.com/results?search_query=document%C3%A1rios" target="blank">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="filme-principal"><!--wrapper, classe pai-->
+            <div class="container"> 
+                <h3 class="titulo">A INCRÍVEL HISTÓRIA DE ADALINE</h3>
+                <p class="descricao">Adaline Bowman (Blake Lively) nasceu na virada do século XX. Depois sofrer um grave acidente de carro. Desde então, ela, milagrosamente, não consegue mais envelhecer, se tornando um ser imortal com a aparência de 29 anos, até econtrar uma razão para arriscar sua imortalidade.
+                </p>            
+                <div role="button" class="botoes">
+                    <!--inclui o role apenas para clarificar para todos os dispositivos a finalidade dessa tag-->
+                    
+                    <a href="https://www.youtube.com/watch?v=5TtQiKI4NhA" target="blank"><button role="button" class="botao"><i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </a>                     
+                    </button>
+                    <a href="https://www.themoviedb.org/movie/293863-the-age-of-adaline?language=pt-BR" target="blank"><button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </a>
+                    </button>
+                    <!-- a tag button fora de uma div específica, herda as configurações da div filme-principal, e os botoes ficariam em coluna. Numa div nova ela assume o display:block por padrão -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=3kOcoFOU4LU" target="blank"><img class="box-filme" src="img/a-espera-de-um-milagre.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=e81o2Np7BXg" target="blank"><img class="box-filme" src="img/a-lista-de-schindler.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=aI_N8-Sk-V4" target="blank"><img class="box-filme" src="img/a-vida-eh-bela.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=4s4UCxCv_OE" target="blank"><img class="box-filme" src="img/ate-o-ultimo-homem.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=Y22NgkErOAk" target="blank"><img class="box-filme" src="img/um-sonho-de-liberdade.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=6g80d7igX0k" target=""><img class="box-filme" src="img/extraordinario.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=bLvqoHBptjg" target="blank"><img class="box-filme" src="img/forest-gump.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=-Fb8h4gChlU" target="blank"><img class="box-filme" src="img/intocaveis.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=Go3OQn1YomI" target="blank"><img class="box-filme" src="img/milagre-na-cela.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=en-Xj7d8NmU" target="blank"><img class="box-filme" src="img/o-pianista.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/ef01fc6a10.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
+
+</body>
+</html>

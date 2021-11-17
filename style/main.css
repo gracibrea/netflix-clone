@@ -1,0 +1,117 @@
+/*usando variável dentro do css*/
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+/*reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*nenhum conteúdo vai ultrapassar a borda da caixa*/
+}
+
+/*elementos base*/
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /*propriedade default. Mesmo se não declarar ficará alinhado em linha*/
+    align-items: center; /*alinha ao centro verticalmente (em relação a parte superior e inferior da linha)*/
+    justify-content: space-between; /*insere espaço entre os elementos, deixando cada um num canto da tela*/
+    margin-left: 30px; /*como não acompanhou a margem no .container, fiz aqui*/
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa-adaline.jpg');
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;    
+    justify-content: center; /*o justify-content sempre segue a direção do flex-direction*/
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+}
+
+.botao { 
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+.botao:hover {
+    background-color: white;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container { /*não alterou o título, como o professor fez*/
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes {
+    margin-top: 10px;
+}
